@@ -30,7 +30,7 @@ extern void* arena_alloc_align(Arena* a, size_t size, size_t alignment);
 extern void* arena_resize(Arena *a, void *old_memory, size_t old_size, size_t new_size);
 extern void* arena_resize_align(Arena *a, void *old_memory, size_t old_size, size_t new_size, size_t alignment);
 
-extern void arena_rest(Arena* a);
+extern void arena_reset(Arena* a);
 extern void arena_free(Arena* a);
 
 extern void* align_forward(void* ptr, size_t alignment);
